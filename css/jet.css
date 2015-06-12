@@ -6,3 +6,14 @@ a.navbar-brand {
   height: 50px;
   width: 50px;
 }
+.navbar {
+  /*background-color: #33CCCC;*/
+  /*background-color: #0099CC;*/
+  background-color: #00E6B8;
+}
+.navbar .nav-pills .active > a {
+    background-color:#ccc;
+    /*color:#0088cc;*/
+    color: black;
+    font-weight: bold;
+}

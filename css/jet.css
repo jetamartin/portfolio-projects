@@ -1,3 +1,15 @@
+.nav li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  /*text-align: center;*/
+}
+
+/* Remove vertical scroll bar when in collapsed mode and selection of social media*/
+.navbar-fixed-top .navbar-collapse {
+
+   max-height: none;
+}
+
 a.navbar-brand {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -10,10 +22,18 @@ a.navbar-brand {
   /*background-color: #33CCCC;*/
   /*background-color: #0099CC;*/
   background-color: #00E6B8;
+  /*background-color: #1fa67a;*/
 }
-.navbar .nav-pills .active > a {
+.navbar .menu-items > a {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*.navbar .nav-pills .active > a {*/
+.navbar .active > a {
     background-color:#ccc;
     /*color:#0088cc;*/
-    color: black;
-    font-weight: bold;
+    /*color: black;
+    font-weight: bold;*/
 }

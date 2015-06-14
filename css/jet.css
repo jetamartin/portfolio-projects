@@ -1,13 +1,13 @@
-.nav li [class*=" icon-"] {
+/*************************** START NAVBAR SECTION *****************************/
+/*.nav li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
-  /*text-align: center;*/
-}
+  text-align: center;
+}*/
 
 /* Remove vertical scroll bar when in collapsed mode and selection of social media*/
 .navbar-fixed-top .navbar-collapse {
-
-   max-height: none;
+   max-height: 500px;
 }
 
 a.navbar-brand {
@@ -33,7 +33,106 @@ a.navbar-brand {
 /*.navbar .nav-pills .active > a {*/
 .navbar .active > a {
     background-color:#ccc;
-    /*color:#0088cc;*/
-    /*color: black;
-    font-weight: bold;*/
 }
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+/***************************  END NAVBAR SECTION  *****************************/
+/*  START HEADER SECTION*/
+div.header-section {
+  /*background-color: #00E6B8;*/
+  background-color: #18bc9c;
+  padding: 75px;
+  width: 100%;
+
+}
+div.photo {
+  text-align: center;
+}
+.my-photo {
+  /*position: relative;*/
+  height: 18vw;
+  width: 18vw;
+}
+h1.giant-text {
+  font-size: 10vw;
+}
+
+.banner-text {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+}
+
+h2.sub-head {
+  font-size: 3vw;
+  text-align: center;
+}
+h2.sub-title {
+  font-size: 2vw;
+  text-align: center;
+}
+.header-separator {
+  margin: 25px auto 50px;
+  padding: 0;
+  max-width: 25vw;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+  overflow: visible;
+}
+.header-separator::after {
+  text-align: center;
+  color: #fff;
+  background-color: #18bc9c;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: 'Glyphicons Halflings';
+  font-size: 3vw;
+  content: "\e007";
+}
+
+/*@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+
+
+.banner-text{
+    font-size: 5.0em;
+}*/
+@media all and (max-device-width: 720px){
+    h1.banner-text {
+        font-size: 100px;
+        font-weight: bold;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    h1.banner-text {
+        font-size: 75px;
+        font-weight: bold;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    h1.banner-text {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+/*  END HEADER SECTION*/

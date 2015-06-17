@@ -181,11 +181,20 @@ div.photo {
 /*  END HEADER SECTION*/
 /**************  END SUB-HEADER SECTION OF BANNER **************/
 /******************** WEB CONTENT SECTIONS ***********************/
+.wrapper {
+  border-bottom: solid black 2vw;
+  margin: 0px;
+}
+
+
 .webpage-separator {
   /*font-size: 4.5vw;*/
   max-width: 100%;
   border-top: solid 2vw;
-  margin-top: 1vw;
+  /*margin-top: 1vw;*/
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
   margin-bottom: 0px;
 }
 .portfolio-separator {
@@ -207,13 +216,15 @@ div.photo {
   top: -.8em;
   padding: 0 .25em;
   font-family: 'Glyphicons Halflings';
-  font-size: 2.0vw;
+  font-size: 2.5vw;
   margin-top: auto;
   content: "\e139";
 }
 
 .blog-separator {
-  margin: 25px auto 50px;
+  /*margin: 25px auto 50px;*/
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
   padding: 0;
   max-width: 35vw;
   border: 0;
@@ -259,7 +270,18 @@ div.photo {
   content: "\2709";
 }
 .section-header-style {
+  margin-top: none;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 3.0vw;
+  font-size: 1.75em;
+  padding-top: 1.5vw;
+  margin-bottom: 2.5vw;
+}
+div.lav-background {
+  background-color: #b0c4de;
+  background-image: url("../img/san-diego-pic.jpg");*/
+  opacity: 0.4;
+}
+div.off-white-background {
+  background-color: #FAF0E6; <!-- Linen -->
 }

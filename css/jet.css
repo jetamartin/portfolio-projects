@@ -28,7 +28,7 @@ a.navbar-brand {
 .navbar .menu-items > a {
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 
 /*.navbar .nav-pills .active > a {*/
@@ -92,18 +92,19 @@ div.photo {
 }
 
 .sub-head {
-  font-size: 3.5vw;
+  /*font-size: 3.5vw;*/
+  font-size: 3.5em;
   text-align: center;
 }
 .sub-title {
-  font-size: 2.5vw;
+  font-size: 2.0em;
   text-align: center;
 }
 /*.sub-columns {
   font-size: 2vw;
 }*/
 .header-separator {
-  margin: 25px auto 50px;
+  margin: 1.0em auto 1.8em;
   padding: 0;
   max-width: 35vw;
   border: 0;
@@ -129,19 +130,49 @@ div.photo {
   .giant-text {
     font-size: 4.6em;
   }
+  .sub-head {
+    margin: auto;
+    letter-spacing: .02em;
+    font-size: 1.5em;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 1.1em;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 610px) {
   .giant-text {
     margin: auto;
     font-size: 6em;
   }
+  .sub-head {
+    margin: auto;
+    letter-spacing: .02em;
+    font-size: 2.5em;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 1.7em;
+    text-align: center;
+  }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1070px) {
   .giant-text {
     margin: auto;
     letter-spacing: .03em;
     font-size: 9em;
     padding: 0;
+  }
+  .sub-head {
+    margin: auto;
+    letter-spacing: .02em;
+    font-size: 3.0em;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 2.0em;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1580px) {
@@ -151,12 +182,23 @@ div.photo {
     font-size: 12em;
     padding: 0;
   }
+  .sub-head {
+    margin: auto;
+    letter-spacing: .01em;
+    font-size: 4em;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 2.75em;
+    text-align: center;
+  }
 }
 
 /**************  START SUB-HEADER SECTION OF BANNER **************/
 
 .sub-column-heading {
   font-weight: bold;
+  font-size: 1.65em;
 }
 /*@media all and (max-device-width: 720px){
     h1.banner-text {
@@ -198,9 +240,9 @@ div.photo {
   margin-bottom: 0px;
 }
 .portfolio-separator {
-  margin: 25px auto 50px;
+  margin: 2.5em auto 3.5em;
   padding: 0;
-  max-width: 35vw;
+  max-width: 75vw;
   border: 0;
   border-top: solid 3px;
   text-align: center;
@@ -216,17 +258,15 @@ div.photo {
   top: -.8em;
   padding: 0 .25em;
   font-family: 'Glyphicons Halflings';
-  font-size: 2.5vw;
+  font-size: 2.5em;
   margin-top: auto;
   content: "\e139";
 }
 
 .blog-separator {
-  /*margin: 25px auto 50px;*/
-  margin-top: 1.0em;
-  margin-bottom: 1.5em;
+  margin: 2.5em auto 3.5em;
   padding: 0;
-  max-width: 35vw;
+  max-width: 75vw;
   border: 0;
   border-top: solid 3px;
   text-align: center;
@@ -242,14 +282,44 @@ div.photo {
   top: -.8em;
   padding: 0 .25em;
   font-family: 'Glyphicons Halflings';
-  font-size: 2.0vw;
+  font-size: 2.5em;
   margin-top: auto;
   content: "\e043";
 }
-.contact-separator {
-  margin: 25px auto 50px;
+/*    Test of eliminating duplication in separator (i.e., unique for each)*/
+.separator-line {
+  /*margin: 25px auto 50px;*/
+  margin: 2.5em auto 3.5em;
+  /*margin-top: 1.0em;
+  margin-bottom: 1.5em;*/
   padding: 0;
-  max-width: 35vw;
+  max-width: 75vw;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+  overflow: visible;
+}
+.separator-line::after {
+  text-align: center;
+  color: #fff;
+  background-color: #0099CC; /* blue */
+  /*background-color: #18bc9c; /* green */*/
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: 'Glyphicons Halflings';
+  font-size: 2.5em;
+  margin-top: auto;
+  content: attr(data-content);
+}
+
+
+/*                        */
+.contact-separator {
+  margin: 2.5em auto 3.5em;
+  padding: 0;
+  max-width: 75vw;
   border: 0;
   border-top: solid 3px;
   text-align: center;
@@ -265,23 +335,29 @@ div.photo {
   top: -.8em;
   padding: 0 .25em;
   font-family: 'Glyphicons Halflings';
-  font-size: 2.0vw;
+  font-size: 2.5em;
   margin-top: auto;
   content: "\2709";
 }
 .section-header-style {
-  margin-top: none;
+  margin-top: 0px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 2.0em;
   padding-top: 1.5vw;
   margin-bottom: 2.5vw;
 }
-div.lav-background {
+/*div.lav-background {
   background-color: #b0c4de;
-  background-image: url("../img/san-diego-pic.jpg");*/
+  background-image: url("../img/BlacksBeach.jpg");*/
   opacity: 0.4;
-}
+}*/
 div.off-white-background {
   background-color: #FAF0E6; <!-- Linen -->
+}
+.smooth-scroll {
+  margin-bottom: 3.75em;
+}
+.center-block {
+  margin-bottom: 2.0em;
 }

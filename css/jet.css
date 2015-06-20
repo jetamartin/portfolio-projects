@@ -67,22 +67,31 @@ div.header-section {
   border-bottom-width: 1vw;
   border-bottom-color: black;
 }*/
-div.photo {
+.div.photo {
   text-align: center;
   height: 100%;
-  /*vertical-align: middle;*/
+  vertical-align: middle;
 }
 .my-photo {
-  position: center;
+  /*position: center;*/
   height: 18vw;
   width: 18vw;
   border: solid black 1px;
+  /*height: 100%;*/
+  vertical-align: middle;
+  height: inherit;
 }
 /*h1.giant-text {
   font-size: 10vw;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }*/
-
+.logo-style {
+  /*position: center;
+  text-align: center;*/
+  height: 35vw;
+  width: 70vw;
+  margin: 0 auto;
+}
 .banner-text {
   font-weight: bold;
   text-align: center;
@@ -178,9 +187,13 @@ div.photo {
 @media screen and (min-width: 1580px) {
   .giant-text {
     margin: auto;
-    letter-spacing: .02em;
-    font-size: 12em;
+    letter-spacing: .001em;
+    font-size: 8em;
     padding: 0;
+  }
+  .smaller-text {
+    font-size: 4em;
+    text-decoration: underline;
   }
   .sub-head {
     margin: auto;
@@ -360,4 +373,31 @@ div.off-white-background {
 }
 .center-block {
   margin-bottom: 2.0em;
+}
+.contact-form {
+  margin-bottom: 30em;
+}
+
+/* Logo stuff*/
+.logo-text {
+  /*width:200px;*/
+  /*border:4px solid #222;*/
+  /*height:200px;*/
+  /*text-align: right;*/
+  position: absolute;
+  text-align: center;
+  float: left;
+}
+.design-logo-part {
+  font-size: 45px;
+  /*position: absolute;*/
+  text-align: right;
+  float: right;
+}
+.text-rotation {
+  -ms-transform:rotate(270deg); /* IE 9 */
+  -moz-transform:rotate(270deg); /* Firefox */
+  /*-webkit-transform-origin: right bottom;*/
+  -webkit-transform:rotate(270deg); /* Safari and Chrome */
+  -o-transform:rotate(270deg); /* Opera */
 }

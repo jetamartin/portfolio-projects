@@ -62,15 +62,17 @@
       </div>
       <div class="container-fluid" id="home">
         <div class="row row-eq-height">
-          <div class="col-md-12 header-section">
-            <div class="row">
-              <div class="col-md-3 photo">
-                <img class="img-circle my-photo center-block" src="../img/CatInHat.jpg" alt="Jet's Photo" />
-              </div>
-              <div class="col-md-9">
+          <!-- <div class="col-md-12 header-section"> -->
+          <div class="col-md-12 header-background" >
 
-                <!-- <h1 class="banner-text giant-text">Jet Martin</h1> -->
-                <img class="img-responsive center-block logo-style" src="../img/WebsiteDesignLogo4.png" alt="Website Logo" />
+            <div class="row">
+
+              <div class="col-md-2 photo">
+                <img class="img-circle img-responsive center-block my-photo" src="../img/CatInHat.jpg" alt="Jet's Photo" />
+              </div>
+              <div class="col-md-10">
+                <img class="img-responsive center-block logo-style" src="../img/WebsiteSquareLogoStretch.png" alt="Website Logo" />
+                <h1 class="banner-text giant-text">Jet Martin</h1>
                 <!-- <br> -->
                 <hr class="header-separator banner-text">
                 <h2 class="sub-head banner-text">
@@ -81,34 +83,45 @@
                 </h2>
               </div>
             </div>
-          </div>
+          </div> <!-- col-md-12 -->
         </div>
       </div>
+
       <div class="wrapper off-white-background">
         <div class="container-fluid">
-          <!-- <div class="row section-separator"> -->
+          <!-- <div class="row section-separator">  -->
           <div class="row">
             <div class="col-md-4">
-              <h2 class="sub-column-heading">WHO AM I</h2>
-              <h3>I'm a freelance web developer and designer based in sunny San Diego.
-              </h3>
+              <h3 class="sub-column-heading">WHO AM I</h2>
+              <h4>I'm a freelance web developer and designer based in sunny San Diego.
+              </h4>
             </div>
             <div class="col-md-4">
-              <h2 class="sub-column-heading">BLOG UPDATE</h2>
-              <h3>Any modern web design must be engaging and responsive. In fact
-              websites should be build based on the "mobile first" priniciple</h3>
+              <h3 class="sub-column-heading">BLOG UPDATE</h2>
+              <h4>Any modern web design must be engaging and responsive. In fact
+              websites should be build based on the "mobile first" priniciple</h4>
             </div>
             <div class="col-md-4">
-              <h2 class="sub-column-heading">CONTACT ME</h2>
-              <h3>If you want to reach me feel free to email me. If you have a
-              quick question or comment you can also tweet me.</h3>
+              <h3 class="sub-column-heading">CONTACT ME</h2>
+              <h4>If you want to reach me feel free to email me. If you have a
+              quick question or comment you can also tweet me.</h4>
             </div>
           </div>
         </div>
-        <div class="smooth-scroll" id="projects">
-          <!-- Div here so that menu selection will be smooth scrolled to beginning of section  -->
-        </div>
       </div>
+
+        <div class="wrapper">
+          <!-- Standalone city-scape scene -->
+          <div class="container-fluid city-scape-image-container">
+            <!-- Div for standalone city scape scene -->
+            <div id="city-scape">
+            </div>
+          </div>
+          <div class="smooth-scroll" id="projects">
+            <!-- Div here so that menu selection will be smooth scrolled to beginning of section  -->
+          </div>
+        </div>
+
 
       <div class= "wrapper lav-background" >
         <div class="container" >
@@ -212,36 +225,44 @@
     </div>
 
       <!-- <section > -->
-          <div class="lav-background">
-          <div class="container-fluid" >
-            <h2 class="section-header-style">Contact Me</h2>
-            <hr class="contact-separator">
+          <!-- <div class="lav-background" id="sd-beach-scene"> -->
+      <div id="sd-beach-scene">
+
+        <div class="container-fluid" >
+          <h2 class="section-header-style">Contact Me</h2>
+          <hr class="contact-separator">
+        </div>
+        <div class="container">
+          <div class="row contact-form">
+          	<div class="col-sm-8 col-sm-offset-2 contact-form wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
+              <form role="form" action="assets/contact.php" method="post">
+              	<div class="form-group" id="contact">
+              		<label class="sr-only" for="contact-email">Email</label>
+                  	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                  </div>
+                  <br> <br>
+                  <div class="form-group">
+                  	<label class="sr-only" for="contact-subject">Subject</label>
+                  	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                  </div>
+                  <br> <br>
+                  <div class="form-group">
+                  	<label class="sr-only" for="contact-message">Message</label>
+                  	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn">Send it</button>
+              </form>
+          	</div>
           </div>
-          <div class="container">
-            <div class="row">
-            	<div class="col-sm-8 col-sm-offset-2 contact-form wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
-                <form role="form" action="assets/contact.php" method="post">
-                	<div class="form-group" id="contact">
-                		<label class="sr-only" for="contact-email">Email</label>
-                    	<input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-                    </div>
-                    <br> <br>
-                    <div class="form-group">
-                    	<label class="sr-only" for="contact-subject">Subject</label>
-                    	<input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-                    </div>
-                    <br> <br>
-                    <div class="form-group">
-                    	<label class="sr-only" for="contact-message">Message</label>
-                    	<textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send it</button>
-                </form>
-            	</div>
-            </div>
         </div>
       </div>
-      <!-- </section> -->
+      <div>
+          <span id="image">
+            <span id="image-inner"> </span>
+          </span>
+      </div>
+     <!-- </section> -->
 
     <!-- </div>
   </body>

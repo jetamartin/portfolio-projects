@@ -20,7 +20,9 @@ a.navbar-brand {
 }
 .navbar {
   /*background-color: #33CCCC;*/
-  background-color: #0099CC; /* blue */
+  background-color: #0099FF; /* Slightly darker blue */
+  /*background-color: #00CCFF; /* Lighter blue *?*/
+  /*background-color: #0099CC; /* blue */*/
   /*background-color: #00E6B8;*/
   /*background-color: #1fa67a;*/
   border-bottom: solid 3px black;
@@ -48,6 +50,80 @@ a.navbar-brand {
 }
 /***************************  END NAVBAR SECTION  *****************************/
 /*  START HEADER SECTION*/
+
+div.header-background1 {
+  background: url("../img/night-time-downtown-San-Diego.jpg") no-repeat center center;
+  opacity: 0.6;
+  max-height: 800px;
+  min-height: 450px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+div.header-background {
+    position: relative;
+    /*background: #5C97FF;*/
+    /*background: #000000; /* Black */
+    background: #707070; /* Dark Grey  */
+    /*background: #999999; /* Light Gray */
+    overflow: hidden;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    border-bottom-color: black;
+    border-style: solid;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+div.header-background::after {
+  background-image: url("../img/night-time-downtown-San-Diego.jpg"); <!-- no-repeat center top; -->
+  padding-top: 100px;
+   content: ' ';
+   display: block;
+   position: absolute;
+   /*position: relative;*/
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0.1;
+   /*background-image: url("../img/night-time-downtown-San-Diego.jpg"); <!-- no-repeat center top; -->*/
+   /*background-image: url("../img/SD-Paragliders.jpg"); <!-- no-repeat center top; -->*/
+   /*background-repeat: no-repeat;*/
+   /*background-position: 50% 0;*/
+     /*background-size: 100% 100%;*/
+   -ms-background-size: contain;
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+  /*background-image: url("../img/night-time-downtown-San-Diego.jpg"); <!-- no-repeat center top; -->
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  border-style: solid;
+  border-bottom-color: black;
+  opacity: 0.4;
+  padding: 75px;
+  color: white;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;*/
+}
+
+
 div.header-section {
   /*background-color: #00E6B8;*/
   /*background-color: #18bc9c;*/
@@ -67,32 +143,35 @@ div.header-section {
   border-bottom-width: 1vw;
   border-bottom-color: black;
 }*/
-.div.photo {
+div.photo {
+  /*position: absolute; /* Test */*/
   text-align: center;
   height: 100%;
+  height: inherit;
   vertical-align: middle;
 }
 .my-photo {
   /*position: center;*/
-  height: 18vw;
-  width: 18vw;
+  /*height: 17em;
+  width: 17em;*/
   border: solid black 1px;
+  /*margin: 0px;*/
   /*height: 100%;*/
-  vertical-align: middle;
-  height: inherit;
+  /*vertical-align: middle;*/
+  /*height: inherit;*/
 }
-/*h1.giant-text {
-  font-size: 10vw;
+.giant-text {
+  /*font-size: 8em;*/
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}*/
-.logo-style {
-  /*position: center;
-  text-align: center;*/
-  height: 35vw;
-  width: 70vw;
-  margin: 0 auto;
 }
-.banner-text {
+.logo-style {
+  text-align: center;
+  height: 20vw;
+  width: 30vw;
+  margin: 0 auto;
+
+}
+.banner-text { /* mod delete .image-holder */
   font-weight: bold;
   text-align: center;
   color: white;
@@ -113,7 +192,7 @@ div.header-section {
   font-size: 2vw;
 }*/
 .header-separator {
-  margin: 1.0em auto 1.8em;
+  margin: 1.8em auto 1.8em;
   padding: 0;
   max-width: 35vw;
   border: 0;
@@ -124,8 +203,9 @@ div.header-section {
 .header-separator::after {
   text-align: center;
   color: #fff;
-  background-color: #0099CC; /* blue */
-  /*background-color: #18bc9c; /* green */*/
+  /*background-color: #0099CC; /* Originalblue */
+  background-color: #0099FF; /* brighter blue */
+  /*background-color: #18bc9c; /* green */
   display: inline-block;
   position: relative;
   top: -.8em;
@@ -135,12 +215,21 @@ div.header-section {
   content: "\e007";
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 320px) {
+  .logo-style {
+    height: 6em;
+    width: 9em;
+  }
+  .my-photo {
+    height: 7em;
+    width: 7em;
+  }
   .giant-text {
-    font-size: 4.6em;
+    font-size: 2.5em;
+    margin-bottom: .9em;
   }
   .sub-head {
-    margin: auto;
+    margin-top: .9em;
     letter-spacing: .02em;
     font-size: 1.5em;
     padding: 0;
@@ -149,11 +238,50 @@ div.header-section {
     font-size: 1.1em;
     text-align: center;
   }
+  .contact-form {
+    margin-top: 0em;
+  }
 }
-@media screen and (min-width: 610px) {
+
+@media screen and (min-width: 380px) {
+  .logo-style {
+    height: 12em;
+    width: 15em;
+  }
+  .my-photo {
+    height: 10em;
+    width: 10em;
+  }
+  .giant-text {
+    font-size: 3em;
+  }
+  .sub-head {
+    margin: auto;
+    letter-spacing: .02em;
+    font-size: 2.0em;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .contact-form {
+    margin-top: 0em;
+  }
+}
+@media screen and (min-width: 475px) {
+
+  .logo-style {
+    height: 12em;
+    width: 15em;
+  }
+  .my-photo {
+    height: 12em;
+    width: 12em;
+  }
   .giant-text {
     margin: auto;
-    font-size: 6em;
+    font-size: 3em;
   }
   .sub-head {
     margin: auto;
@@ -165,16 +293,58 @@ div.header-section {
     font-size: 1.7em;
     text-align: center;
   }
+  .contact-form {
+    margin-top: 2em;
+  }
 }
-@media screen and (min-width: 1070px) {
+
+
+@media screen and (min-width: 610px) {
+
+  .logo-style {
+    height: 15em;
+    width: 18.75em;
+  }
+  .my-photo {
+    height: 12em;
+    width: 12em;
+  }
   .giant-text {
     margin: auto;
-    letter-spacing: .03em;
-    font-size: 9em;
-    padding: 0;
+    font-size: 4em;
   }
   .sub-head {
     margin: auto;
+    letter-spacing: .02em;
+    font-size: 2.5em;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  .contact-form {
+    margin-top: 2em;
+  }
+}
+@media screen and (min-width: 1070px) {
+
+  .logo-style {
+    height: 18em;
+    width: 22.5em;
+  }
+  .my-photo {
+    height: 15em;
+    width: 15em;
+  }
+  .giant-text {
+    margin-bottom: .9em;
+    /*letter-spacing: .03em;*/
+    font-size: 5em;
+    padding: 0;
+  }
+  .sub-head {
+    margin-top: .9em;
     letter-spacing: .02em;
     font-size: 3.0em;
     padding: 0;
@@ -185,10 +355,20 @@ div.header-section {
   }
 }
 @media screen and (min-width: 1580px) {
+
+  .logo-style {
+    height: 20em;
+    width: 30em;
+  }
+  .my-photo {
+    height: 17em;
+    width: 17em;
+  }
+
   .giant-text {
-    margin: auto;
-    letter-spacing: .001em;
-    font-size: 8em;
+    margin-bottom: .75em;
+    /*letter-spacing: .001em;*/
+    font-size: 7em;
     padding: 0;
   }
   .smaller-text {
@@ -196,7 +376,7 @@ div.header-section {
     text-decoration: underline;
   }
   .sub-head {
-    margin: auto;
+    margin-top: .75em;
     letter-spacing: .01em;
     font-size: 4em;
     padding: 0;
@@ -211,7 +391,8 @@ div.header-section {
 
 .sub-column-heading {
   font-weight: bold;
-  font-size: 1.65em;
+  text-decoration: underline;
+  /*font-size: 1.5em;*/
 }
 /*@media all and (max-device-width: 720px){
     h1.banner-text {
@@ -240,7 +421,24 @@ div.header-section {
   border-bottom: solid black 2vw;
   margin: 0px;
 }
+#projects {
+  margin: 0px;
+}
+/* Standalone city-scape scene */
+#city-scape {
+  background: url("../img/night-time-downtown-San-Diego.jpg"); no-repeat center center;
+  opacity: 0.5;
+  min-height: 200px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
 
+.city-scape-image-container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 
 .webpage-separator {
   /*font-size: 4.5vw;*/
@@ -362,9 +560,39 @@ div.header-section {
 }
 /*div.lav-background {
   background-color: #b0c4de;
-  background-image: url("../img/BlacksBeach.jpg");*/
+  background-image: url("../img/BlacksBeach.jpg") no-repeat center top;
   opacity: 0.4;
 }*/
+
+
+#sd-beach-scene {
+	background: url("../img/SD-Paragliders.jpg") no-repeat center top;
+	/*padding-top: 100px;*/
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+  max-height: 600px;
+	width: 100%;
+  opacity: 0.6;
+	color: white;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+
+div.lav-background {
+  background-color: #b0c4de;
+}
+
 div.off-white-background {
   background-color: #FAF0E6; <!-- Linen -->
 }
@@ -400,4 +628,50 @@ div.off-white-background {
   /*-webkit-transform-origin: right bottom;*/
   -webkit-transform:rotate(270deg); /* Safari and Chrome */
   -o-transform:rotate(270deg); /* Opera */
+}
+
+.contact-form {
+  margin-top: 0em;
+}
+
+/* Test with image opacity */
+.my-container {
+    position: relative;
+    overflow: hidden;
+}
+.my-container h1 {
+    padding: 200px;
+    position: relative;
+    z-index: 2;
+}
+.my-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+#image {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/1night-time-downtown-San-Diego.jpg");
+    /*opacity: .6;*/
+}
+#image-inner {
+    display: block;
+    height: 0;
+    padding-top: 63.3%;
+}
+div.image-holder {
+  display: block;
+}
+.image-holder {
+  position: relative;
 }

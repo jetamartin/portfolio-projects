@@ -50,11 +50,33 @@ $(document).ready(function() {
   //         break;
   //     }
   //    });
-// ------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
+
+function scroll_to(clicked_link, nav_height) {
+	var element_class = clicked_link.attr('href').replace('#', '.');
+	var scroll_to = 0;
+	if(element_class != '.top-content') {
+		element_class += '-container';
+		scroll_to = $(element_class).offset().top - nav_height;
+	}
+	if($(window).scrollTop() != scroll_to) {
+		$('html, body').stop().animate({scrollTop: scroll_to}, 1000);
+	}
+}
+
+$('a.scroll-link').on('click', function(e) {
+  e.preventDefault();
+  scroll_to($(this), $('nav').outerHeight());
+});
+
+// Link and activate WOW.js
+new WOW().init();
+
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
+
   $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
           || location.hostname == this.hostname) {

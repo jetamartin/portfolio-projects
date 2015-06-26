@@ -61,20 +61,109 @@ a.navbar-brand {
 }
 /***************************  END NAVBAR SECTION  *****************************/
 /*  START HEADER SECTION*/
+/**********************  New stuff *****************/
+
+/*------------------ CSS for Buttons "Link-1" ----------------*/
+a, a:hover, a:focus {
+	color: #21ccec;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+img { max-width: 100%; }
+
+::-moz-selection { background: #21ccec; color: #fff; text-shadow: none; }
+::selection { background: #21ccec; color: #fff; text-shadow: none; }
+
+
+/*------------------ CSS for Button "Link-1" ----------------*/
+.learn-more {
+  text-align: center;
+  margin-top: 3em;
+}
+.big-link-1 {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 15px 20px;
+	background: #22A7F0;
+	border: 0;
+  z-index: 1;
+	font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+}
+
+.big-link-1:hover, .big-link-1:active .big-link-1:focus,  { outline: 0; opacity: 0.6; color: #fff; }
+
+.big-link-2 {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 14px 19px;
+	background: none;
+	border: 1px solid #fff;
+  /*z-index: 1;*/
+	font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+}
+.big-link-2:hover, .big-link-2:focus, .big-link-2:active, .big-link-2:active:focus { outline: 0; opacity: 0.6; background: none; color: #fff; }
+
+.pricing-box-sign-up .big-link-1,
+.pricing-box-sign-up .big-link-1:active:focus {
+	background: #21ccec;
+}
+
+/*------------------ End Button Stuff ----------------------*/
 .smooth-scroll {
   margin: 0px;
 }
+/*.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}*/
 div.header-background1 {
   background: url("../img/night-time-downtown-San-Diego.jpg") no-repeat center center;
-  opacity: 0.6;
-  max-height: 800px;
-  min-height: 450px;
-    -webkit-background-size: contain;
+  padding-top: 15vw;
+  padding-bottom: 5vw;
+  border-bottom: solid black;
+  opacity: .8;
+  position: relative;
+  background-size: cover;
+  margin-right: -15px;
+  margin-left: -15px;
+  /*max-height: 800px;
+  /*min-height: 450px;*/
+    /*-webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
   }
+  .header-background1 .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+      -webkit-opacity: .4;
+      -moz-opacity: .4;
+      opacity: .7;
+      -ms-filter: "alpha(Opacity=70)";
+      filter: alpha(opacity=70);
+      z-index: 90;
+}
+.header-background1 .banner-content {
+  position: relative;
+  z-index: 100;
+}
+
 div.header-background {
     position: relative;
     /*background: #5C97FF;*/
@@ -88,10 +177,12 @@ div.header-background {
     border-style: solid;
     width: 100%;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 div.header-background::after {
   background-image: url("../img/night-time-downtown-San-Diego.jpg"); <!-- no-repeat center top; -->
+  /*background-repeat: repeat-none;*/
   padding-top: 100px;
    content: ' ';
    display: block;
@@ -101,8 +192,8 @@ div.header-background::after {
    top: 0;
    width: 100%;
    height: 100%;
-   z-index: 1;
    opacity: 0.1;
+   z-index: -1;
    /*background-image: url("../img/night-time-downtown-San-Diego.jpg"); <!-- no-repeat center top; -->*/
    /*background-image: url("../img/SD-Paragliders.jpg"); <!-- no-repeat center top; -->*/
    /*background-repeat: no-repeat;*/
@@ -137,32 +228,16 @@ div.header-background::after {
 }
 
 
-div.header-section {
-  /*background-color: #00E6B8;*/
-  /*background-color: #18bc9c;*/
-  background-color: #0099CC; /* blue */
-  /*background-color: #1fa67a;*/
-  padding: 75px;
-  width: 100%;
-  border-style: solid;
-  /*border-bottom-width: 2vw;*/
-  /*border-top-width: 5vw;*/
-  border-bottom-color: black;
-  /*border-top-color: black;*/
-  /*vertical-align: middle;*/
-}
-/*.section-separator {
-  border-style: solid;
-  border-bottom-width: 1vw;
-  border-bottom-color: black;
-}*/
 div.photo {
   /*position: absolute; /* Test */*/
   text-align: center;
   height: 100%;
   height: inherit;
   vertical-align: middle;
+  z-index: 1;
+
 }
+
 .my-photo {
   /*position: center;*/
   /*height: 17em;
@@ -173,6 +248,8 @@ div.photo {
   /*vertical-align: middle;*/
   /*height: inherit;*/
 }
+
+
 .giant-text {
   /*font-size: 8em;*/
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
@@ -189,6 +266,8 @@ div.photo {
   /*font-weight: bold;*/
   text-align: center;
   color: white;
+  font-family: 'Roboto';
+  font-weight: 600;
   /*margin-bottom: 0px;*/
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -205,11 +284,14 @@ div.photo {
 .sub-head {
   /*font-size: 3.5vw;*/
   font-size: 3.5em;
+  font-style: italic;
   /*font-weight: 300;*/
   text-align: center;
 }
 .sub-title {
-  font-size: 2.2em;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Roboto';
   text-align: center;
   font-weight: lighter;
   /*margin-top: .02em;*/
@@ -223,7 +305,7 @@ div.photo {
   padding: 0;
   max-width: 35vw;
   border: 0;
-  border-top: solid 3px;
+  border-top: solid 1px;
   text-align: center;
   overflow: visible;
 }
@@ -231,14 +313,15 @@ div.photo {
   text-align: center;
   color: #fff;
   /*background-color: #0099CC; /* Originalblue */
-  background-color: #0099FF; /* brighter blue */
+  /*background-color: #0099FF; /* brighter blue */
+  background-color: #22A7F0; /* match .active color */
   /*background-color: #18bc9c; /* green */
   display: inline-block;
   position: relative;
   top: -.8em;
   padding: 0 .25em;
   font-family: 'Glyphicons Halflings';
-  font-size: 2em;
+  font-size: 1.4em;
   content: "\e007";
 }
 @media screen and (min-width: 100px) {
@@ -510,7 +593,7 @@ div.photo {
   padding: 0;
   max-width: 75vw;
   border: 0;
-  border-top: solid 3px;
+  border-top: solid black 1px;
   text-align: center;
   overflow: visible;
 }
@@ -534,7 +617,7 @@ div.photo {
   padding: 0;
   max-width: 75vw;
   border: 0;
-  border-top: solid 3px;
+  border-top: solid black 1px;
   text-align: center;
   overflow: visible;
 }
@@ -561,7 +644,7 @@ div.photo {
   padding: 0;
   max-width: 75vw;
   border: 0;
-  border-top: solid 3px;
+  border-top: solid black 1px;
   text-align: center;
   overflow: visible;
 }
@@ -587,7 +670,7 @@ div.photo {
   padding: 0;
   max-width: 75vw;
   border: 0;
-  border-top: solid 3px;
+  border-top: solid 1px;
   text-align: center;
   overflow: visible;
 }

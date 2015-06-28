@@ -1,3 +1,9 @@
+/* General formatting */
+.centered {
+  text-align: center;
+}
+
+
 /*************************** START NAVBAR SECTION *****************************/
 /*.nav li [class*=" icon-"] {
   display: inline-block;
@@ -6,6 +12,7 @@
 }*/
 
 /* Remove vertical scroll bar when in collapsed mode and selection of social media*/
+
 .navbar-fixed-top .navbar-collapse {
    max-height: 500px;
 }
@@ -155,7 +162,7 @@ div.header-background1 {
     background: #212121;
       -webkit-opacity: .4;
       -moz-opacity: .4;
-      opacity: .7;
+      opacity: .8;
       -ms-filter: "alpha(Opacity=70)";
       filter: alpha(opacity=70);
       z-index: 90;
@@ -548,7 +555,8 @@ div.photo {
     text-decoration: underline;
   }
   .sub-head {
-    margin-top: .75em;
+    margin-top: 40px;
+    margin-bottom: 40px;
     letter-spacing: .01em;
     /*font-size: 4em;*/
     padding: 0;
@@ -600,7 +608,7 @@ div.photo {
  padding: 50px;
 }
 
-/******************** WHAT TO DO SECTION ***********************/
+/******************** WHAT WE DO SECTION ***********************/
 
 .web-section-separator {
   margin: 2.5em auto 3.5em;
@@ -614,19 +622,64 @@ div.photo {
 .services-section {
 
 }
-.services-section i {
-  font-size: 8em;
+.services-section span {
+  /*font-size: 2.0em;*/
   color: #22A7F0;
 }
 
 .what-we-do-container-padding {
-  padding-bottom: 200px;
+  padding-bottom: 250px;
+}
+
+
+.block-3-box-icon .block-3-box-icon-number {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 32px;
+  height: 32px;
+  background: #ddd;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+.block-3-box .block-3-box-icon i, .block-3-box .block-3-box-icon span {
+  vertical-align: middle;
 }
 
 
 
+.block-3-box .block-3-box-icon i, .block-3-box .block-3-box-icon span {
+  vertical-align: middle;
+}
 
+.block-3-box .block-3-box-icon {
+  position: relative;
+  font-size: 80px;
+  color: #444;
+  line-height: 80px;
+}
+.block-3-box .block-3-box-icon-blue {
+  color: #21ccec;
+}
 
+.block-3-box .block-3-box-icon-violet {
+  color: #a151ea;
+}
+
+.block-3-box .block-3-box-icon-blue { color: #21ccec; }
+.block-3-box .block-3-box-icon-violet { color: #a151ea; }
+
+.block-3-box:hover .block-3-box-icon-blue .block-3-box-icon-number { background: #21ccec; }
+.block-3-box:hover .block-3-box-icon-violet .block-3-box-icon-number { background: #a151ea; }
 
 /******************** WEB CONTENT SECTIONS ***********************/
 
@@ -634,9 +687,11 @@ div.photo {
 #projects {
   margin: 0px;
 }
+
 /* Standalone city-scape scene */
+
 #city-scape {
-  background: url("../img/night-time-downtown-San-Diego.jpg"); no-repeat center center;
+  background: url("../img/night-time-downtown-San-Diego.jpg"); /* no-repeat center center; */
   opacity: 0.7;
   border: solid;
   min-height: 200px;
@@ -805,7 +860,7 @@ div.lav-background {
 }
 
 div.off-white-background {
-  background-color: #FAF0E6; <!-- Linen -->
+  background-color: #FAF0E6; /* Linen */
 }
 /*.smooth-scroll {
   margin-bottom: 3.75em;
@@ -859,9 +914,9 @@ div.off-white-background {
 #footer a {
 	color: white;
 }
-.centered {
+/*.centered {
   text-align: center;
-}
+}*/
 /* -------------------------Test with image opacity -------------------- */
 .my-container {
     position: relative;
@@ -903,3 +958,6 @@ div.image-holder {
 .image-holder {
   position: relative;
 }
+/*body {
+  font-weight: 300px;
+}*/

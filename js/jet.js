@@ -65,7 +65,19 @@ $(document).ready(function() {
   //    });
 // -------------------------------------------------------------------------------
 
+// Portfolio Javascript to load images
 
+// var $container = $('.container');
+//
+// $container.imagesLoaded( function() {
+//   $container.masonry({
+//     itemSelector        : '.post-box',
+//     columnWidth         : '.post-box',
+//     transitionDuration  : 0
+//   });
+// });
+
+// Scroll location for buttons on banner page
 
 $('a.scroll-link').on('click', function(e) {
   e.preventDefault();

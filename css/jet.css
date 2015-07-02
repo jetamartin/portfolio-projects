@@ -946,18 +946,11 @@ div.photo {
 }
 .portfolio-background-image {
   background: white url("../img/beach-sand-texture.jpg") no-repeat center center;
-  /*padding-top: 6vw;
-  padding-bottom: 5vw;*/
-  /*border-bottom: solid black;*/
   opacity: 1;
   position: relative;
   width: 100%;
   height: 100%;
-  /*margin-top: -100px;
-  margin-bottom: -100px;*/
 
-  /*max-height: 800px;
-  /*min-height: 450px;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -985,11 +978,6 @@ div.photo {
  .portfolio-1 {
    background-color: rgba(255,255,255,0.7);
    background-size: cover;
-   /*margin-left: -100px;
-   margin-right: -100px;*/
-   /*margin-bottom: -85px;
-   margin-top: -50px;*/
-   /*overflow: hidden;*/
  }
 
 
@@ -1003,6 +991,34 @@ div.photo {
 .blog-elements {
   -webkit-animation-duration: 2s;
 }
+
+#blog {
+  /*margin-right: auto;
+  margin-left: auto;*/
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.blog-background-image {
+  background: white url("../img/clear-water.jpg") no-repeat center center;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*margin-right: -15px;
+  margin-left: -15px;*/
+
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .blog-image {
+    background-color: rgba(255,255,255,0.7);
+    background-size: cover;
+  }
 /*-----------------End Blog Section ------------------------------*/
 
 .portfolio-separator {

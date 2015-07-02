@@ -154,6 +154,7 @@ div.header-background1 {
   opacity: .8;
   position: relative;
   background-size: cover;
+  /*background-color:rgba(255,255,255,0.2);*/
   margin-right: -15px;
   margin-left: -15px;
   /*max-height: 800px;
@@ -170,6 +171,7 @@ div.header-background1 {
     top: 0;
     width: 100%;
     height: 100%;
+    background-color:rgba(0,0,0,0.9);
     background: #212121;
       -webkit-opacity: .4;
       -moz-opacity: .4;
@@ -647,9 +649,10 @@ div.photo {
   color: #22A7F0;
 }
 
-.what-we-do-container-padding {
+.about-me-container-buffer {
   /*padding-bottom: 250px;*/
   /*max-height: 350px;*/
+  margin-bottom: 6em;
 }
 
 
@@ -705,10 +708,8 @@ div.photo {
 /******************** WEB CONTENT SECTIONS ***********************/
 
 
-#projects {
-  margin-right: auto;
-  margin-left: auto;
-}
+
+
 
 /* Standalone city-scape scene */
 
@@ -747,7 +748,15 @@ div.photo {
   -webkit-animation-duration: 2s;
 }
 .post-box {
-  margin: 15px 0 15px 0;
+  margin: 45px 0 15px 0;
+  /*width: 300px;
+  height: 200px;*/
+  /*width: 100%;*/
+  /*z-index: 101;*/
+}
+.center-it {
+  width: 50%;
+  margin: 0 auto;
 }
 .left-align-text {
   text-align: left;
@@ -929,6 +938,63 @@ div.photo {
    transition-delay: 0.2s;
 }
 /*     Style1 End */
+#projects {
+  /*margin-right: auto;
+  margin-left: auto;*/
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.portfolio-background-image {
+  background: white url("../img/beach-sand-texture.jpg") no-repeat center center;
+  /*padding-top: 6vw;
+  padding-bottom: 5vw;*/
+  /*border-bottom: solid black;*/
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*margin-top: -100px;
+  margin-bottom: -100px;*/
+
+  /*max-height: 800px;
+  /*min-height: 450px;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /*.portfolio-background-image .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+      -webkit-opacity: .4;
+      -moz-opacity: .4;
+      opacity: .2;
+      -ms-filter: "alpha(Opacity=70)";
+      filter: alpha(opacity=70);
+      z-index: 90;
+}*/
+/*.portfolio-background-image {*/
+  /*position: relative;*/
+  /*z-index: 100;
+}*/
+ .portfolio-1 {
+   background-color: rgba(255,255,255,0.7);
+   background-size: cover;
+   /*margin-left: -100px;
+   margin-right: -100px;*/
+   /*margin-bottom: -85px;
+   margin-top: -50px;*/
+   /*overflow: hidden;*/
+ }
+
+
+
+
 /*------------------------------------------------------------------------------------*/
 
 /*************** END NEW PORFOLIO SECTION  ***********************/
@@ -1101,7 +1167,7 @@ div.off-white-background {
   margin-bottom: 3.75em;
 }*/
 .center-block {
-  margin-bottom: 2.0em;
+  /*margin-bottom: 2.0em;*/
 }
 .contact-form {
   margin-bottom: 30em;

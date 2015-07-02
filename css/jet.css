@@ -1,7 +1,4 @@
 /* General formatting */
-.centered {
-  text-align: center;
-}
 body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
@@ -11,8 +8,13 @@ body {
   line-height: 30px;
   text-align: center;
 }
+.centered {
+  text-align: center;
+}
 
-
+.left-align-text {
+  text-align: left;
+}
 /*************************** START NAVBAR SECTION *****************************/
 /*.nav li [class*=" icon-"] {
   display: inline-block;
@@ -738,8 +740,14 @@ div.photo {
   padding: 10px;
 } */
 
+.portfolio-elements {
+  -webkit-animation-duration: 2s;
+}
 .post-box {
   margin: 15px 0 15px 0;
+}
+.left-align-text {
+  text-align: left;
 }
 
 /*  CSS from http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */
@@ -922,6 +930,11 @@ div.photo {
 
 /*************** END NEW PORFOLIO SECTION  ***********************/
 
+/*------------------Blog Section ---------------------------------*/
+.blog-elements {
+  -webkit-animation-duration: 2s;
+}
+/*-----------------End Blog Section ------------------------------*/
 
 .portfolio-separator {
   margin: 2.5em auto 3.5em;

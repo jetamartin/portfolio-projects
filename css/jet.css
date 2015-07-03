@@ -1024,7 +1024,7 @@ div.photo {
   margin-right: -15px;
 }
 
-.blog-background-image {
+.water-background-image {
   background: white url("../img/clear-water.jpg") no-repeat center center;
   opacity: 1;
   position: relative;
@@ -1041,7 +1041,7 @@ div.photo {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .blog-image {
+  .water-image-mask {
     background-color: rgba(255,255,255,0.7);
     background-size: cover;
   }

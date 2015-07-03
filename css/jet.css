@@ -724,7 +724,32 @@ div.photo {
     background-size: contain;
   }
 
-.city-scape-image-container {
+
+/* Standalone city-scape scene */
+
+#city-skyline {
+  background: url("../img/san-diego-city-skyline-image.jpg") no-repeat center center;
+  opacity: 0.7;
+  border: solid;
+  min-height: 200px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: cover;
+  }
+  #ob-pier {
+    /*background: url("../img/ocean-beach-pier.jpg") no-repeat center center;*/
+    background: url("../img/ocean-beach-pier.jpg");  /* no-repeat center center; */
+    opacity: 0.7;
+    border: solid;
+    min-height: 200px;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
+
+.image-container {
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -976,7 +1001,7 @@ div.photo {
   /*z-index: 100;
 }*/
  .portfolio-1 {
-   background-color: rgba(255,255,255,0.7);
+   background-color: rgba(255,255,255,0.85);
    background-size: cover;
  }
 
@@ -1005,6 +1030,7 @@ div.photo {
   position: relative;
   width: 100%;
   height: 100%;
+  border: solid 2px;
   /*margin-right: -15px;
   margin-left: -15px;*/
 
@@ -1158,6 +1184,7 @@ div.photo {
 	width: 100%;
   opacity: 0.6;
 	color: white;
+  border: solid 2px;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;

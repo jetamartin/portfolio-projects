@@ -391,9 +391,9 @@ div.photo {
     font-size: 1.1em;
     text-align: center;
   }
-  .contact-form {
+  /*.contact-form {
     margin-top: 0em;
-  }
+  }*/
   .call-to-action {
     font-size: .9em;
   }
@@ -421,9 +421,9 @@ div.photo {
     font-size: 1.1em;
     text-align: center;
   }
-  .contact-form {
+  /*.contact-form {
     margin-top: 0em;
-  }
+  }*/
   .call-to-action {
     font-size: .9em;
   }
@@ -451,9 +451,9 @@ div.photo {
     font-size: 1.3em;
     text-align: center;
   }
-  .contact-form {
+  /*.contact-form {
     margin-top: 0em;
-  }
+  }*/
   /*.call-to-action-text {
     font-size: .9em;
   }*/
@@ -484,9 +484,9 @@ div.photo {
     font-size: 1.7em;
     text-align: center;
   }
-  .contact-form {
+  /*.contact-form {
     margin-top: 2em;
-  }
+  }*/
   /*.call-to-action-text {
     font-size: .9em;
   }*/
@@ -517,9 +517,9 @@ div.photo {
     font-size: 1.7em;
     text-align: center;
   }
-  .contact-form {
+  /*.contact-form {
     margin-top: 2em;
-  }
+  }*/
   /*.call-to-action-text {
 
   }*/
@@ -1180,7 +1180,7 @@ div.photo {
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 450px;
-  max-height: 900px;
+  max-height: 950px;
 	width: 100%;
   opacity: 0.6;
 	color: white;
@@ -1212,9 +1212,9 @@ div.off-white-background {
 .center-block {
   /*margin-bottom: 2.0em;*/
 }
-.contact-form {
+/*.contact-form {
   margin-bottom: 30em;
-}
+}*/
 
 /* Logo stuff*/
 .logo-text {
@@ -1242,6 +1242,7 @@ div.off-white-background {
 
 .contact-form {
   margin-top: 0em;
+  margin-bottom: 5em;
 }
 .contact-form form button {
   width: 100%;

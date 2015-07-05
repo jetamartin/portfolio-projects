@@ -331,7 +331,7 @@ div.photo {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   color: white;
-  /*font-weight: bold;*/
+  font-weight: 300;
 }
 /*.sub-columns {
   font-size: 2vw;
@@ -1190,9 +1190,9 @@ div.photo {
 	min-height: 450px;
   max-height: 950px;
 	width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
 	color: white;
-  border: solid 2px;
+  /*border: solid 2px;*/
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;

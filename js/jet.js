@@ -28,6 +28,7 @@ function scroll_to(clicked_link, nav_height) {
 
 // Smooth scrolling script from https://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(document).ready(function() {
+
 // ------------------------------------------------------------------------------------------
   // Code below attempted to dynamically change glyphicons used on web page separator
   // to avoid having to distinct CSS code for every separator (e.g., blog-separator, project-separator, etc)
